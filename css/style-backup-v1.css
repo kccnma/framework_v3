@@ -1,0 +1,1743 @@
+/* line 1, ../../../sass/partials/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, ../../../sass/partials/_html5.scss */
+header, section, footer, aside, nav, article, figure {
+  display: block;
+}
+
+/* #Images (Responsive)
+================================================== */
+/* line 3, ../../../sass/partials/_media.scss */
+img.scale-with-grid {
+  /*width: 100%;*/
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 9, ../../../sass/partials/_media.scss */
+a img {
+  border: none;
+}
+
+/* #Video (Responsive)
+================================================== */
+/* line 16, ../../../sass/partials/_media.scss */
+.video {
+  margin-bottom: 1em;
+}
+
+/* line 2, ../../../sass/partials/_clearfix.scss */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+/* line 6, ../../../sass/partials/_clearfix.scss */
+.group:after {
+  clear: both;
+}
+
+/* line 9, ../../../sass/partials/_clearfix.scss */
+.group {
+  /*zoom: 1;  For IE 6/7 (trigger hasLayout) */
+}
+
+/*
+=================================================
+	Basic text sizing
+=================================================
+	Set your main font size for paragraph
+
+	Reference
+	62.5%  => 10px
+	68.8%  => 11px
+	75%    => 12px
+	81.3%  => 13px
+	87.5%  => 14px
+	100%   => 16px
+	112.5% => 18px
+	125%   => 20px
+
+*/
+/* line 19, ../../../sass/partials/_typography.scss */
+body {
+  font-family: "OpenSansLight", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #333333;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*
+Traditional scale: 6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 21, 24, 36, 48, 60, 72
+	if base is 16:
+	h1 = 48 pixels → 48 ÷ 16 = 3 em
+	h2 = 36 pixels → 36 ÷ 16 = 2.25 em
+	h3 = 24 pixels → 24 ÷ 16 = 1.5 em
+	h4 = 21 pixels → 21 ÷ 16 = 1.3125 em
+	h5 = 18 pixels → 18 ÷ 16 = 1.125 em
+	h6 = 16 pixels → 16 ÷ 16 = 1 em
+*/
+/* line 42, ../../../sass/partials/_typography.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+/* SIMPLE VERSION */
+/* line 45, ../../../sass/partials/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* line 50, ../../../sass/partials/_typography.scss */
+h1 {
+  font-size: 3em;
+  /* 48px / 16px = 3em */
+  line-height: 1em;
+}
+
+/* line 55, ../../../sass/partials/_typography.scss */
+h2 {
+  font-size: 2.25em;
+  /* 36px / 16px = 2.25em */
+  line-height: 1.1em;
+}
+
+/* line 60, ../../../sass/partials/_typography.scss */
+h3 {
+  font-size: 1.5em;
+  /* 24px / 16px = 1.5em */
+  line-height: 1.2em;
+}
+
+/* line 65, ../../../sass/partials/_typography.scss */
+h4 {
+  font-size: 1.3125em;
+  /* 21px / 16px = 1.3125em */
+  line-height: 1.3em;
+}
+
+/* line 70, ../../../sass/partials/_typography.scss */
+h5 {
+  font-size: 1.125em;
+  /* 18px / 16px = 1.125em */
+  line-height: 1.4em;
+}
+
+/* line 75, ../../../sass/partials/_typography.scss */
+h6 {
+  font-size: 1em;
+  /* 16px / 16px = 1em */
+  line-height: 1.5em;
+}
+
+/* #Paragraphs 
+================================================== */
+/* line 82, ../../../sass/partials/_typography.scss */
+p {
+  margin-bottom: 1.5em;
+}
+
+/*
+p+p {
+  text-indent: 1em;
+  margin-top: -1.25em;
+}*/
+/* line 91, ../../../sass/partials/_typography.scss */
+.text-center {
+  text-align: center;
+}
+
+/* #Links
+================================================== */
+/* line 98, ../../../sass/partials/_typography.scss */
+a {
+  color: #3399cc;
+  text-decoration: none;
+  outline: 0;
+}
+
+/* line 99, ../../../sass/partials/_typography.scss */
+a:hover, a:focus {
+  color: #006699;
+}
+
+/* line 100, ../../../sass/partials/_typography.scss */
+p a, p a:visited {
+  line-height: inherit;
+}
+
+/* #Lists
+================================================== */
+/* line 106, ../../../sass/partials/_typography.scss */
+ul, ol {
+  margin: 0 0 1.5em 0;
+  clear: both;
+}
+
+/* line 111, ../../../sass/partials/_typography.scss */
+li {
+  clear: both;
+  margin: 0 0 0 1.875em;
+}
+
+/* line 116, ../../../sass/partials/_typography.scss */
+ul li ul, ul li ol, ol li ol, ol li ul {
+  margin: 0;
+}
+
+/* line 120, ../../../sass/partials/_typography.scss */
+ul li ul li, ol li ol li, ol li ul li, ul li ol li {
+  margin: 0 0 0px 1.875em;
+}
+
+/* #Icons
+================================================== */
+/* line 129, ../../../sass/partials/_typography.scss */
+ul.icons {
+  list-style: none;
+  margin: 0 0 1.25em .35em;
+}
+
+/* line 134, ../../../sass/partials/_typography.scss */
+ul.icons li {
+  margin: 0 0 0px -1.875em;
+}
+
+/* line 138, ../../../sass/partials/_typography.scss */
+ul.icons li a i {
+  color: #333333;
+}
+
+/* #Block Quotes
+================================================== */
+/* line 144, ../../../sass/partials/_typography.scss */
+blockquote {
+  position: relative;
+  margin: 1em 0 2em 0;
+  padding: 1.5em 4em 1em 4em;
+  color: #666666;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+/* line 158, ../../../sass/partials/_typography.scss */
+blockquote.quotes:before {
+  display: block;
+  content: "\201C";
+  font-size: 4em;
+  position: absolute;
+  top: .6em;
+  left: .3em;
+  color: #d9d9d9;
+}
+
+/* line 168, ../../../sass/partials/_typography.scss */
+blockquote.quotes:after {
+  display: block;
+  content: "\201D";
+  font-size: 4em;
+  position: absolute;
+  bottom: .4em;
+  right: .3em;
+  color: #d9d9d9;
+}
+
+/* line 178, ../../../sass/partials/_typography.scss */
+blockquote cite {
+  color: #999999;
+  font-size: .85em;
+  display: block;
+  text-align: right;
+}
+
+/* line 185, ../../../sass/partials/_typography.scss */
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
+/* line 189, ../../../sass/partials/_typography.scss */
+blockquote.left {
+  font-size: 1em;
+  width: 23%;
+  float: left;
+  margin: 0 1em .5em 0;
+  padding: .5em 1.5em .5em 0;
+  border-right: 1px solid #cccccc;
+  text-align: right;
+}
+
+/* line 199, ../../../sass/partials/_typography.scss */
+blockquote.right {
+  font-size: 1em;
+  width: 23%;
+  float: right;
+  margin: 0 0 .5em 1em;
+  padding: .5em 0 .5em 1.5em;
+  border-left: 1px solid #cccccc;
+}
+
+/* @FONT-FACE */
+@font-face {
+  font-family: 'MuseoSlab500';
+  src: url("../fonts/Museo/museo_slab_500-webfont.eot");
+  src: url("../fonts/Museo/museo_slab_500-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo/museo_slab_500-webfont.woff") format("woff"), url("../fonts/Museo/museo_slab_500-webfont.ttf") format("truetype"), url("../fonts/Museo/museo_slab_500-webfont.svg#montserratbold") format("svg");
+}
+
+@font-face {
+  font-family: 'Museo300';
+  src: url("../fonts/Museo/museo300-regular-webfont.eot");
+  src: url("../fonts/Museo/museo300-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo/museo300-regular-webfont.woff") format("woff"), url("../fonts/Museo/museo300-regular-webfont.ttf") format("truetype"), url("../fonts/Museo/museo300-regular-webfont.svg#montserratbold") format("svg");
+}
+
+/* A font by Jos Buivenga (exljbris) -> http://www.exljbris.com */
+@font-face {
+  font-family: 'MuseoSans500';
+  src: url("../fonts/Museo/MuseoSans_500-webfont.eot");
+  src: url("../fonts/Museo/MuseoSans_500-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo/MuseoSans_500-webfont.woff") format("woff"), url("../fonts/Museo/MuseoSans_500-webfont.ttf") format("truetype"), url("../fonts/Museo/MuseoSans_500-webfont.svg#montserratbold") format("svg");
+}
+
+/* */
+@font-face {
+  font-family: 'montserratbold';
+  src: url("../fonts/Montserrat/montserrat-bold-webfont.eot");
+  src: url("../fonts/Montserrat/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/montserrat-bold-webfont.woff") format("woff"), url("../fonts/Montserrat/montserrat-bold-webfont.ttf") format("truetype"), url("../fonts/Montserrat/montserrat-bold-webfont.svg#montserratbold") format("svg");
+}
+
+/* */
+@font-face {
+  font-family: 'nevis';
+  src: url("../fonts/Nevis/nevis-webfont.eot");
+  src: url("../fonts/Nevis/nevis-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Nevis/nevis-webfont.woff") format("woff"), url("../fonts/Nevis/nevis-webfont.ttf") format("truetype"), url("../fonts/Nevis/nevis-webfont.svg#montserratbold") format("svg");
+}
+
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url("../fonts/OpenSans/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/OpenSans/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans/OpenSans-Regular-webfont.svg#OpenSansRegular") format("svg");
+}
+
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url("../fonts/OpenSans/OpenSans-Light-webfont.eot");
+  src: url("../fonts/OpenSans/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Light-webfont.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Light-webfont.ttf") format("truetype"), url("../fonts/OpenSans/OpenSans-Light-webfont.svg#OpenSansLight") format("svg");
+}
+
+@font-face {
+  font-family: 'OpenSansLightItalic';
+  src: url("../fonts/OpenSans/OpenSans-LightItalic-webfont.eot");
+  src: url("../fonts/OpenSans/OpenSans-LightItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-LightItalic-webfont.woff") format("woff"), url("../fonts/OpenSans/OpenSans-LightItalic-webfont.ttf") format("truetype"), url("../fonts/OpenSans/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic") format("svg");
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url("../fonts/OpenSans/OpenSans-Bold-webfont.eot");
+  src: url("../fonts/OpenSans/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Bold-webfont.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Bold-webfont.ttf") format("truetype"), url("../fonts/OpenSans/OpenSans-Bold-webfont.svg#OpenSansBold") format("svg");
+}
+
+@font-face {
+  font-family: 'OpenSansExtraBold';
+  src: url("../fonts/OpenSans/OpenSans-ExtraBold-webfont.eot");
+  src: url("../fonts/OpenSans/OpenSans-ExtraBold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-ExtraBold-webfont.woff") format("woff"), url("../fonts/OpenSans/OpenSans-ExtraBold-webfont.ttf") format("truetype"), url("../fonts/OpenSans/OpenSans-ExtraBold-webfont.svg#OpenSansExtraBold") format("svg");
+}
+
+@font-face {
+  font-family: 'ChunkFiveRegular';
+  src: url("../../framework/fonts/Chunkfive-webfont.eot");
+  src: url("../../framework/fonts/Chunkfive-webfont.eot?#iefix") format("embedded-opentype"), url("../../framework/fonts/Chunkfive-webfont.woff") format("woff"), url("../../framework/fonts/Chunkfive-webfont.ttf") format("truetype"), url("../../framework/fonts/Chunkfive-webfont.svg#ChunkFiveRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PacificoRegular';
+  src: url("../fonts/Pacifico/Pacifico-webfont.eot");
+  src: url("../fonts/Pacifico/Pacifico-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Pacifico/Pacifico-webfont.woff") format("woff"), url("../fonts/Pacifico/Pacifico-webfont.ttf") format("truetype"), url("../fonts/Pacifico/Pacifico-webfont.svg#PacificoRegular") format("svg");
+}
+
+@font-face {
+  font-family: 'HoneyScriptLight';
+  src: url("../fonts/HoneyScript/honeyscript-light-webfont.eot");
+  src: url("../fonts/HoneyScript/honeyscript-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/HoneyScript/honeyscript-light-webfont.woff") format("woff"), url("../fonts/HoneyScript/honeyscript-light-webfont.ttf") format("truetype"), url("../fonts/HoneyScript/honeyscript-light-webfont.svg#HoneyScriptLight") format("svg");
+}
+
+@font-face {
+  font-family: 'BebasRegular';
+  src: url("../fonts/Bebas/BEBAS___-webfont.eot");
+  src: url("../fonts/Bebas/BEBAS___-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Bebas/BEBAS___-webfont.woff") format("woff"), url("../fonts/Bebas/BEBAS___-webfont.ttf") format("truetype"), url("../fonts/Bebas/BEBAS___-webfont.svg#BebasRegular") format("svg");
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../fonts/BebasNeue/BebasNeue-webfont.eot");
+  src: url("../fonts/BebasNeue/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeue-webfont.woff") format("woff"), url("../fonts/BebasNeue/BebasNeue-webfont.ttf") format("truetype"), url("../fonts/BebasNeue/BebasNeue-webfont.svg#BebasRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VarelaRegular';
+  src: url("../fonts/Varela/varela-regular-webfont.eot");
+  src: url("../fonts/Varela/varela-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Varela/varela-regular-webfont.woff") format("woff"), url("../fonts/Varela/varela-regular-webfont.ttf") format("truetype"), url("../fonts/Varela/varela-regular-webfont.svg#varelaregular") format("svg");
+}
+
+@font-face {
+  font-family: 'SortsMillGoudy';
+  src: url("../fonts/SortsMillGoudy/GoudyStM-webfont.eot");
+  src: url("../fonts/SortsMillGoudy/GoudyStM-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/SortsMillGoudy/GoudyStM-webfont.woff") format("woff"), url("../fonts/SortsMillGoudy/GoudyStM-webfont.ttf") format("truetype"), url("../fonts/SortsMillGoudy/GoudyStM-webfont.svg#varelaregular") format("svg");
+}
+
+@font-face {
+  font-family: 'Crimson';
+  src: url("../fonts/Crimson/crimson-roman-webfont.eot");
+  src: url("../fonts/Crimson/crimson-roman-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Crimson/crimson-roman-webfont.woff") format("woff"), url("../fonts/Crimson/crimson-roman-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Crimson-bold';
+  src: url("../fonts/Crimson/crimson-bold-webfont.eot");
+  src: url("../fonts/Crimson/crimson-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Crimson/crimson-bold-webfont.woff") format("woff"), url("../fonts/Crimson/crimson-bold-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Crimson-italic';
+  src: url("../fonts/Crimson/crimson-italic-webfont.eot");
+  src: url("../fonts/Crimson/crimson-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Crimson/crimson-italic-webfont.woff") format("woff"), url("../fonts/Crimson/crimson-italic-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Aleo-bold';
+  src: url("../fonts/Aleo/Aleo-Bold-webfont.eot");
+  src: url("../fonts/Aleo/Aleo-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Aleo/Aleo-Bold-webfont.woff") format("woff"), url("../fonts/Aleo/Aleo-Bold-webfont.ttf") format("truetype"), url("../fonts/Aleo/Aleo-Bold-webfont.svg#aleobold") format("svg");
+}
+
+@font-face {
+  font-family: 'Aleo-light';
+  src: url("../fonts/Aleo/Aleo-Light-webfont.eot");
+  src: url("../fonts/Aleo/Aleo-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Aleo/Aleo-Light-webfont.woff") format("woff"), url("../fonts/Aleo/Aleo-Light-webfont.ttf") format("truetype"), url("../fonts/Aleo/Aleo-Light -webfont.svg#aleobold") format("svg");
+}
+
+/* #Buttons
+================================================== */
+/* line 8, ../../../sass/partials/_buttons_v2.scss */
+button,
+a.button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  font-size: .8em;
+  line-height: .8em;
+  font-family: "nevis", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0.8);
+  padding: .95em .9em .85em 1.1em;
+  margin: 1em 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+/* line 24, ../../../sass/partials/_buttons_v2.scss */
+input[type="submit"] {
+  /*display: block;*/
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/* line 34, ../../../sass/partials/_buttons_v2.scss */
+button.reverse,
+a.button.reverse,
+input[type="submit"].reverse,
+input[type="reset"].reverse,
+input[type="button"].reverse {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 49, ../../../sass/partials/_buttons_v2.scss */
+.dark button,
+.dark a.button,
+.dark input[type="submit"],
+.dark input[type="reset"],
+.dark input[type="button"],
+.dark button.reverse:hover,
+.dark a.button.reverse:hover,
+.dark input[type="submit"].reverse:hover,
+.dark input[type="reset"].reverse:hover,
+.dark input[type="button"].reverse:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 59, ../../../sass/partials/_buttons_v2.scss */
+.dark button.reverse,
+.dark a.button.reverse,
+.dark input[type="submit"].reverse,
+.dark input[type="reset"].reverse,
+.dark input[type="button"].reverse {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* line 74, ../../../sass/partials/_buttons_v2.scss */
+button:hover,
+a.button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button.reverse:hover,
+a.button.reverse:hover,
+input[type="submit"].reverse:hover,
+input[type="reset"].reverse:hover,
+input[type="button"].reverse:hover {
+  background-color: #39c;
+  border: 1px solid #39c;
+  color: #fff;
+}
+
+/* #FORMS
+================================================== */
+/* line 4, ../../../sass/partials/_forms.scss */
+form {
+  text-align: left;
+}
+
+/* line 11, ../../../sass/partials/_forms.scss */
+input[type="email"],
+input[type="search"],
+input[type="text"],
+textarea {
+  font-size: .9em;
+  height: 3em;
+  padding: .5em .75em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-width: 100%;
+}
+
+/* line 26, ../../../sass/partials/_forms.scss */
+textarea {
+  min-height: 10em;
+  max-width: 100%;
+  padding-top: .75em;
+  padding-bottom: .75em;
+}
+
+/* line 38, ../../../sass/partials/_forms.scss */
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+  outline: 0;
+}
+
+/* line 42, ../../../sass/partials/_forms.scss */
+label {
+  display: block;
+  margin: .5em 0;
+}
+
+/* line 47, ../../../sass/partials/_forms.scss */
+input + label {
+  margin-top: 1em;
+}
+
+/* FULL-PAGE SECTIONS */
+/* line 3, ../../../sass/partials/_fullpagesections.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* line 8, ../../../sass/partials/_fullpagesections.scss */
+.fpage {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  /*for mozilla*/
+}
+
+/* line 16, ../../../sass/partials/_fullpagesections.scss */
+.fcontainer {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* SIMPLE GRID */
+/* line 3, ../../../sass/partials/layout/_grid-simple.scss */
+.row {
+  margin: 0;
+}
+
+/* line 7, ../../../sass/partials/layout/_grid-simple.scss */
+.column {
+  display: block;
+  float: left;
+  margin-right: 8%;
+  margin-bottom: 1em;
+}
+
+/* line 14, ../../../sass/partials/layout/_grid-simple.scss */
+.column:last-child {
+  margin-right: 0;
+}
+
+/* line 18, ../../../sass/partials/layout/_grid-simple.scss */
+.column.centered {
+  float: none;
+  margin: 0 auto 1em auto;
+}
+
+/* line 23, ../../../sass/partials/layout/_grid-simple.scss */
+.column.textcentered {
+  text-align: center;
+}
+
+/* line 27, ../../../sass/partials/layout/_grid-simple.scss */
+.one-whole.column {
+  width: 100%;
+  margin: 0 0 1em 0;
+}
+
+/* line 28, ../../../sass/partials/layout/_grid-simple.scss */
+.one-half.column {
+  width: 46%;
+}
+
+/* line 29, ../../../sass/partials/layout/_grid-simple.scss */
+.one-third.column {
+  width: 28%;
+}
+
+/* line 30, ../../../sass/partials/layout/_grid-simple.scss */
+.two-thirds.column {
+  width: 64%;
+}
+
+/* line 31, ../../../sass/partials/layout/_grid-simple.scss */
+.one-fourth.column {
+  width: 19%;
+}
+
+/* line 33, ../../../sass/partials/layout/_grid-simple.scss */
+.demo .column {
+  padding: 1em 0;
+  background: #ccc;
+}
+
+/* line 37, ../../../sass/partials/layout/_grid-simple.scss */
+.demo .column p:last-child {
+  margin-bottom: 0;
+}
+
+/* MOBILE (Smaller than 768px)*/
+@media all and (max-width: 767px) {
+  /* line 44, ../../../sass/partials/layout/_grid-simple.scss */
+  .column {
+    float: none;
+    margin: 0 0 1em 0;
+  }
+
+  /* line 52, ../../../sass/partials/layout/_grid-simple.scss */
+  .one-half.column,
+  .one-third.column,
+  .two-thirds.column,
+  .one-fourth.column {
+    width: 100%;
+  }
+
+  /* line 54, ../../../sass/partials/layout/_grid-simple.scss */
+  .column.split {
+    float: left;
+    width: 48%;
+    margin: 0 1% 1em 0;
+  }
+
+  /* line 56, ../../../sass/partials/layout/_grid-simple.scss */
+  .column.centered {
+    width: 100%;
+    margin: 0 auto 1em 0;
+  }
+}
+/* #IMAGE GRID
+================================================== */
+/* line 4, ../../../sass/partials/layout/_grid-image.scss */
+.grid {
+  margin: 1% -1%;
+}
+
+/* line 8, ../../../sass/partials/layout/_grid-image.scss */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 14, ../../../sass/partials/layout/_grid-image.scss */
+.grid li {
+  position: relative;
+  height: 0;
+  float: left;
+  margin: 1%;
+  overflow: hidden;
+  background: #ddd;
+  text-align: center;
+  clear: none;
+}
+
+/* line 25, ../../../sass/partials/layout/_grid-image.scss */
+.grid .right {
+  float: right;
+}
+
+/* line 29, ../../../sass/partials/layout/_grid-image.scss */
+.grid a {
+  display: block;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+   /* margin: 3px;
+	background: #fff;*/
+  transition: all 0.1s ease;
+}
+
+/* line 41, ../../../sass/partials/layout/_grid-image.scss */
+.grid li:hover {
+  /*background: #999;*/
+}
+
+/* line 45, ../../../sass/partials/layout/_grid-image.scss */
+.grid li:hover a {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*margin: 0px;
+  border: 3px solid #999;*/
+  background: #ddd;
+}
+
+/* line 55, ../../../sass/partials/layout/_grid-image.scss */
+.grid img {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 85%;
+  /* you can scale images downward here or keep them at 100% */
+  max-height: 85%;
+  /* you can scale images downward here or keep them at 100% */
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+/* 12 col grid */
+/* line 71, ../../../sass/partials/layout/_grid-image.scss */
+.grid .w1 {
+  width: 6.3333%;
+}
+
+/* 98% - 11 gutters = 78% / 12 columns = 6.3333% */
+/* line 72, ../../../sass/partials/layout/_grid-image.scss */
+.grid .w2 {
+  width: 14.6666%;
+}
+
+/* (6.3333 * 2) + (1 * 2) = */
+/* line 73, ../../../sass/partials/layout/_grid-image.scss */
+.grid .w3 {
+  width: 23%;
+}
+
+/* (6.3333 * 3) + (2 * 2) = */
+/* line 74, ../../../sass/partials/layout/_grid-image.scss */
+.grid .w4 {
+  width: 31.3333%;
+}
+
+/* (6.3333 * 4) + (3 * 2) = */
+/* line 75, ../../../sass/partials/layout/_grid-image.scss */
+.grid .w5 {
+  width: 39.6666%;
+}
+
+/* (6.3333 * 5) + (4 * 2) = */
+/* line 76, ../../../sass/partials/layout/_grid-image.scss */
+.grid .w6 {
+  width: 48%;
+}
+
+/* (6.3333 * 6) + (5 * 2) = */
+/* line 77, ../../../sass/partials/layout/_grid-image.scss */
+.grid .w7 {
+  width: 56.3333%;
+}
+
+/* (6.3333 * 7) + (6 * 2) = */
+/* line 78, ../../../sass/partials/layout/_grid-image.scss */
+.grid .w8 {
+  width: 64.6666%;
+}
+
+/* (6.3333 * 8) + (7 * 2) = */
+/* line 79, ../../../sass/partials/layout/_grid-image.scss */
+.grid .w9 {
+  width: 73%;
+}
+
+/* (6.3333 * 9) + (8 * 2) = */
+/* line 80, ../../../sass/partials/layout/_grid-image.scss */
+.grid .w10 {
+  width: 81.3333%;
+}
+
+/* (6.3333 * 10) + (9 * 2) = */
+/* line 81, ../../../sass/partials/layout/_grid-image.scss */
+.grid .w11 {
+  width: 89.6666%;
+}
+
+/* (6.3333 * 11) + (10 * 2) = */
+/* line 82, ../../../sass/partials/layout/_grid-image.scss */
+.grid .w12 {
+  width: 98%;
+}
+
+/* line 84, ../../../sass/partials/layout/_grid-image.scss */
+.grid .h1 {
+  padding-top: 6.3333%;
+}
+
+/* 98% - 11 gutters = 78% / 12 columns = 6.3333% */
+/* line 85, ../../../sass/partials/layout/_grid-image.scss */
+.grid .h2 {
+  padding-top: 14.6666%;
+}
+
+/* (6.3333 * 2) + (1 * 2) = */
+/* line 86, ../../../sass/partials/layout/_grid-image.scss */
+.grid .h3 {
+  padding-top: 23%;
+}
+
+/* (6.3333 * 3) + (2 * 2) = */
+/* line 87, ../../../sass/partials/layout/_grid-image.scss */
+.grid .h4 {
+  padding-top: 31.3333%;
+}
+
+/* (6.3333 * 4) + (3 * 2) = */
+/* line 88, ../../../sass/partials/layout/_grid-image.scss */
+.grid .h5 {
+  padding-top: 39.6666%;
+}
+
+/* (6.3333 * 5) + (4 * 2) = */
+/* line 89, ../../../sass/partials/layout/_grid-image.scss */
+.grid .h6 {
+  padding-top: 48%;
+}
+
+/* (6.3333 * 6) + (5 * 2) = */
+/* line 90, ../../../sass/partials/layout/_grid-image.scss */
+.grid .h7 {
+  padding-top: 56.3333%;
+}
+
+/* (6.3333 * 7) + (6 * 2) = */
+/* line 91, ../../../sass/partials/layout/_grid-image.scss */
+.grid .h8 {
+  padding-top: 64.6666%;
+}
+
+/* (6.3333 * 8) + (7 * 2) = */
+/* line 92, ../../../sass/partials/layout/_grid-image.scss */
+.grid .h9 {
+  padding-top: 73%;
+}
+
+/* (6.3333 * 9) + (8 * 2) = */
+/* line 93, ../../../sass/partials/layout/_grid-image.scss */
+.grid .h10 {
+  padding-top: 81.3333%;
+}
+
+/* (6.3333 * 10) + (9 * 2) = */
+/* line 94, ../../../sass/partials/layout/_grid-image.scss */
+.grid .h11 {
+  padding-top: 89.6666%;
+}
+
+/* (6.3333 * 11) + (10 * 2) = */
+/* line 95, ../../../sass/partials/layout/_grid-image.scss */
+.grid .h12 {
+  padding-top: 98%;
+}
+
+/* line 97, ../../../sass/partials/layout/_grid-image.scss */
+.grid.samesize li {
+  position: relative;
+  width: 23%;
+  /*31.3333%;*/
+  height: 0;
+  padding-top: 23%;
+  /* 31.3333%; */
+  float: left;
+  margin: 1%;
+  overflow: hidden;
+  background: #ddd;
+  text-align: center;
+}
+
+/* line 109, ../../../sass/partials/layout/_grid-image.scss */
+.grid.samesize img {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 75%;
+  /* you can scale images downward here or keep them at 100% */
+  max-height: 75%;
+  /* you can scale images downward here or keep them at 100% */
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+/* line 123, ../../../sass/partials/layout/_grid-image.scss */
+.grid.white li {
+  background: #fff;
+}
+
+/* line 124, ../../../sass/partials/layout/_grid-image.scss */
+.grid.efefef li {
+  background: #efefef;
+}
+
+/* line 125, ../../../sass/partials/layout/_grid-image.scss */
+.grid.grey808080 li {
+  background: #808080;
+}
+
+/* line 126, ../../../sass/partials/layout/_grid-image.scss */
+.grid.grey808080 li:hover a {
+  background: #bbb;
+}
+
+/* line 127, ../../../sass/partials/layout/_grid-image.scss */
+.grid.greyddd li {
+  background: #ddd;
+}
+
+/* line 128, ../../../sass/partials/layout/_grid-image.scss */
+.grid.greyddd li:hover a {
+  background: #bbb;
+}
+
+/* line 129, ../../../sass/partials/layout/_grid-image.scss */
+.grid.greyccc li {
+  background: #ccc;
+}
+
+/* line 130, ../../../sass/partials/layout/_grid-image.scss */
+.grid.greyccc li:hover a {
+  background: #ccc;
+}
+
+/* line 134, ../../../sass/partials/layout/_grid-image.scss */
+.grid.grid-bgswap li {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: none;
+}
+
+/* line 141, ../../../sass/partials/layout/_grid-image.scss */
+.grid.grid-bgswap li a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 150, ../../../sass/partials/layout/_grid-image.scss */
+.grid-bgswap li:hover a {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* LAYOUT/GRID
+Description: Place grid and visual layout styling here. 
+(e.g. containers, rows, columns)
+===================================== */
+/* line 11, ../scss/style-backup-v1.scss */
+.container {
+  /* Fixed width */
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* #Typography Overrides
+================================================== */
+/* line 19, ../scss/style-backup-v1.scss */
+header, footer, #mainnav, #footernav {
+  font-family: "nevis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+/* line 26, ../scss/style-backup-v1.scss */
+header h1, header h2, footer h1, footer h2, #mainnav h1, #mainnav h2, #footernav h1, #footernav h2 {
+  font-family: "nevis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 33, ../scss/style-backup-v1.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Aleo-bold", "OpenSansBold", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: .5em;
+}
+
+/* line 40, ../scss/style-backup-v1.scss */
+strong {
+  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 46, ../scss/style-backup-v1.scss */
+em {
+  font-family: "OpenSansLightItalic", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 52, ../scss/style-backup-v1.scss */
+.byline + p {
+  text-indent: 0;
+  margin-top: 0;
+}
+
+/* line 58, ../scss/style-backup-v1.scss */
+.byline {
+  font-family: "OpenSansLight", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #666666;
+}
+
+/* line 65, ../scss/style-backup-v1.scss */
+h1 + .byline, h2 + .byline, h3 + .byline, h4 + .byline, h5 + .byline, h6 + .byline {
+  margin-top: 0;
+}
+
+/* #Custom Classes
+================================================== */
+/* line 71, ../scss/style-backup-v1.scss */
+.hide {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+/* line 77, ../scss/style-backup-v1.scss */
+.fullwidth, .fullwidth img {
+  display: block;
+  width: 100%;
+}
+
+/* line 78, ../scss/style-backup-v1.scss */
+.centered {
+  margin: 0 auto;
+}
+
+/* line 79, ../scss/style-backup-v1.scss */
+.textcentered {
+  text-align: center;
+}
+
+/* #Colors
+================================================== */
+/* line 85, ../scss/style-backup-v1.scss */
+.dark, .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #fff;
+}
+
+/* line 86, ../scss/style-backup-v1.scss */
+.dark a {
+  color: #39c;
+}
+
+/* SECTIONS
+Description: Style major site sections here. 
+(e.g. header, navs/navigation, site-specific content sections, 
+asides, sidebars, footer, sub page-specific styling, etc.)
+===================================== */
+/* line 94, ../scss/style-backup-v1.scss */
+header {
+  padding: 0;
+  background: #262626;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+/* line 108, ../scss/style-backup-v1.scss */
+header a, header a:visited, header a:focus {
+  color: #f2f2f2;
+}
+/* line 112, ../scss/style-backup-v1.scss */
+header a:hover {
+  color: white;
+}
+/* line 117, ../scss/style-backup-v1.scss */
+header .logo {
+  float: left;
+}
+/* line 120, ../scss/style-backup-v1.scss */
+header .logo h1 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  line-height: 1em;
+  margin: 0;
+  white-space: nowrap;
+}
+/* line 129, ../scss/style-backup-v1.scss */
+header .logo p {
+  font-size: .5em;
+  color: gray;
+  margin-bottom: 0;
+  display: none;
+}
+/* line 136, ../scss/style-backup-v1.scss */
+header .logo a {
+  display: block;
+  padding: .76em .75em;
+  color: white;
+  margin-left: -0.75em;
+}
+/* line 143, ../scss/style-backup-v1.scss */
+header .logo a:hover {
+  color: white;
+  background: #43a9e4;
+}
+
+/* line 152, ../scss/style-backup-v1.scss */
+#mainnav {
+  float: right;
+}
+/* line 155, ../scss/style-backup-v1.scss */
+#mainnav #menu {
+  display: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.8em;
+  padding: 1.09em 1.25em;
+  text-align: right;
+  float: right;
+  background: none;
+}
+/* line 165, ../scss/style-backup-v1.scss */
+#mainnav #menu span {
+  display: none;
+}
+/* line 170, ../scss/style-backup-v1.scss */
+#mainnav #menu:hover, #mainnav #menu.nobg:hover {
+  background: #43a9e4;
+}
+/* line 174, ../scss/style-backup-v1.scss */
+#mainnav #menu:visited, #mainnav #menu:focus, #mainnav #menu.nobg {
+  background: none;
+}
+/* line 180, ../scss/style-backup-v1.scss */
+#mainnav .border-menu {
+  position: relative;
+  padding-left: 1.25em;
+}
+/* line 184, ../scss/style-backup-v1.scss */
+#mainnav .border-menu:before {
+  content: "";
+  position: absolute;
+  top: .755em;
+  right: .9em;
+  width: .75em;
+  height: 0.125em;
+  border-top: 0.375em double #fff;
+  border-bottom: 0.125em solid #fff;
+}
+/* line 195, ../scss/style-backup-v1.scss */
+#mainnav ul {
+  text-align: right;
+  margin: 0;
+  margin-right: -4%;
+}
+/* line 200, ../scss/style-backup-v1.scss */
+#mainnav ul li {
+  display: inline-block;
+  font-size: .9em;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+}
+/* line 207, ../scss/style-backup-v1.scss */
+#mainnav ul li a {
+  display: inline-block;
+  padding: 1.7em 1em 1.5em 1em;
+}
+/* line 212, ../scss/style-backup-v1.scss */
+#mainnav ul li a:hover {
+  color: white;
+  background: #43a9e4;
+}
+
+/* line 224, ../scss/style-backup-v1.scss */
+section {
+  padding: 6em 0;
+}
+
+/* line 228, ../scss/style-backup-v1.scss */
+h1.sectionhead {
+  font-family: "nevis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.25em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #bfbfbf;
+}
+
+/* line 237, ../scss/style-backup-v1.scss */
+h1.sectionhead:after {
+  content: '';
+  display: block;
+  width: 20%;
+  margin: .5em auto 2em auto;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+/* #HERO/FEATURED IMAGES
+================================================== */
+/* HERO AREA */
+/* line 249, ../scss/style-backup-v1.scss */
+.hero {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* line 258, ../scss/style-backup-v1.scss */
+.hero .image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 70;
+  background: #000;
+}
+/* line 269, ../scss/style-backup-v1.scss */
+.hero .bgswap {
+  background-image: url(../images_v3/hero-nma17-4x3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* line 276, ../scss/style-backup-v1.scss */
+.hero .cover {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+/* line 284, ../scss/style-backup-v1.scss */
+.hero .cover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: auto;
+  min-width: 50%;
+  min-height: 0;
+  max-width: 85%;
+  max-height: none;
+  overflow-x: hidden;
+}
+/* line 300, ../scss/style-backup-v1.scss */
+.hero .content {
+  z-index: 80;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* line 319, ../scss/style-backup-v1.scss */
+.hero.regular {
+  height: auto;
+}
+/* line 322, ../scss/style-backup-v1.scss */
+.hero.regular .feature {
+  position: relative;
+  width: 100%;
+  top: 3.7em;
+}
+/* line 328, ../scss/style-backup-v1.scss */
+.hero.regular img {
+  display: block;
+  width: 100%;
+}
+/* line 333, ../scss/style-backup-v1.scss */
+.hero.regular .content {
+  top: 20%;
+}
+
+/* #AUTO COLORED SECTIONS */
+/* line 341, ../scss/style-backup-v1.scss */
+.colored {
+  background: #e5e5e5;
+  padding: 6em 0 8em 0;
+}
+
+/* line 346, ../scss/style-backup-v1.scss */
+.colored:nth-child(odd) {
+  background: #f2f2f2;
+}
+
+/* line 350, ../scss/style-backup-v1.scss */
+.colored:last-of-type {
+  background: white;
+}
+
+/* line 354, ../scss/style-backup-v1.scss */
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: .7em;
+  color: #fff;
+  padding: 1em 0;
+  background: #000;
+}
+/* line 364, ../scss/style-backup-v1.scss */
+footer a, footer a:visited, footer a:focus {
+  color: #fff;
+}
+/* line 368, ../scss/style-backup-v1.scss */
+footer #footernav ul, footer #socialmedia {
+  text-align: center;
+  margin: 0;
+}
+/* line 372, ../scss/style-backup-v1.scss */
+footer #footernav ul li, footer #socialmedia li {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+}
+/* line 377, ../scss/style-backup-v1.scss */
+footer #footernav ul li a, footer #socialmedia li a {
+  display: inline-block;
+  padding: .8em;
+}
+/* line 381, ../scss/style-backup-v1.scss */
+footer #footernav ul li a:hover, footer #socialmedia li a:hover {
+  color: #ccc;
+}
+/* line 387, ../scss/style-backup-v1.scss */
+footer #socialmedia {
+  display: none;
+}
+/* line 391, ../scss/style-backup-v1.scss */
+footer #copyright {
+  display: none;
+  margin: 1em 0;
+  font-size: .6em;
+  color: #b3b3b3;
+}
+
+/* #SWIPER CUSTOM STYLING
+================================================== */
+/* line 401, ../scss/style-backup-v1.scss */
+.swiper-container {
+  width: 100%;
+  text-align: center;
+  /*max-height: 500px;*/
+}
+
+/* line 407, ../scss/style-backup-v1.scss */
+.swiper-container img.scale-with-grid {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* line 412, ../scss/style-backup-v1.scss */
+.swiper-container img.w2h1 {
+  top: 50%;
+  margin-top: -25%;
+}
+
+/* line 417, ../scss/style-backup-v1.scss */
+.swiper-container img.w3h1 {
+  top: 75%;
+  margin-top: -25%;
+  margin-bottom: 25%;
+}
+
+/* line 422, ../scss/style-backup-v1.scss */
+.swiper-container img.bottom {
+  bottom: 0;
+}
+
+/* line 426, ../scss/style-backup-v1.scss */
+.pagination {
+  /*position: absolute;
+  z-index: 20;
+  width: 100%;
+  bottom: 10px;*/
+  text-align: center;
+  background: #f2f2f2;
+}
+
+/* line 434, ../scss/style-backup-v1.scss */
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  box-shadow: 0px 1px 1px #bfbfbf inset;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+/* line 444, ../scss/style-backup-v1.scss */
+.swiper-active-switch {
+  background: #a6a6a6;
+}
+
+/* line 447, ../scss/style-backup-v1.scss */
+.swiper.arrow-left {
+  background: url(../swiper/img/arrows.png) no-repeat left top;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 100;
+}
+
+/* line 458, ../scss/style-backup-v1.scss */
+.swiper.arrow-right {
+  background: url(../swiper/img/arrows.png) no-repeat left bottom;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 100;
+}
+
+/* line 469, ../scss/style-backup-v1.scss */
+.swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 474, ../scss/style-backup-v1.scss */
+.swiper-slide .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  /*for mozilla*/
+}
+
+/* line 487, ../scss/style-backup-v1.scss */
+.swiper-slide .content p {
+  max-width: 22em;
+}
+
+/* #TEXT-BOXES
+================================================== */
+/* line 494, ../scss/style-backup-v1.scss */
+.textbox {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 499, ../scss/style-backup-v1.scss */
+.textbox h1, .textbox h2 {
+  margin-bottom: .25em;
+}
+/* line 503, ../scss/style-backup-v1.scss */
+.textbox h1 span, .textbox h2 span {
+  display: block;
+  font-size: .4em;
+  line-height: 2em;
+}
+/* line 509, ../scss/style-backup-v1.scss */
+.textbox h1 a, .textbox h2 a {
+  color: white;
+}
+/* line 512, ../scss/style-backup-v1.scss */
+.textbox p {
+  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+  margin-bottom: .25em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 520, ../scss/style-backup-v1.scss */
+.textbox .button.reverse:hover {
+  background: white;
+  color: #43a9e4;
+}
+
+/* line 527, ../scss/style-backup-v1.scss */
+.textbox.topped {
+  padding-bottom: 15%;
+}
+
+/* line 529, ../scss/style-backup-v1.scss */
+.nodesktop {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+/* MEDIA QUERIES
+Description: Define screen-size breakpoints here.
+(e.g. Desktop, Tablet, Mobile)
+===================================== */
+/* Tablet (Between 768px - 1000px)*/
+@media all and (min-width: 768px) and (max-width: 1000px) {
+  /* line 544, ../scss/style-backup-v1.scss */
+  body {
+    font-size: 93.75%;
+    /* 15px */
+  }
+
+  /* line 548, ../scss/style-backup-v1.scss */
+  .container {
+    width: 92%;
+    margin: 0;
+    padding: 0 4%;
+  }
+
+  /* line 554, ../scss/style-backup-v1.scss */
+  .fullwidth {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* line 556, ../scss/style-backup-v1.scss */
+  .swiper-container img.scale-with-grid {
+    width: 150%;
+    max-width: none;
+  }
+
+  /* line 561, ../scss/style-backup-v1.scss */
+  .notablet {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+}
+/* MOBILE (Smaller than 768px)*/
+@media all and (max-width: 767px) {
+  /* line 572, ../scss/style-backup-v1.scss */
+  body {
+    font-size: 87.5%;
+    /* 14px */
+  }
+
+  /* line 576, ../scss/style-backup-v1.scss */
+  .container {
+    width: 92%;
+    margin: 0;
+    padding: 0 4%;
+  }
+
+  /* line 582, ../scss/style-backup-v1.scss */
+  .fullwidth {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* line 583, ../scss/style-backup-v1.scss */
+  .nomobile {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+
+  /* line 589, ../scss/style-backup-v1.scss */
+  .nodesktop {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+  }
+
+  /* line 598, ../scss/style-backup-v1.scss */
+  header .container {
+    width: 100%;
+    padding: 0;
+  }
+  /* line 603, ../scss/style-backup-v1.scss */
+  header .logo {
+    margin-left: 4%;
+  }
+  /* line 606, ../scss/style-backup-v1.scss */
+  header .logo a {
+    padding: .8em .75em;
+  }
+
+  /* line 612, ../scss/style-backup-v1.scss */
+  #mainnav {
+    float: none;
+  }
+  /* line 615, ../scss/style-backup-v1.scss */
+  #mainnav #menu {
+    display: block;
+  }
+  /* line 619, ../scss/style-backup-v1.scss */
+  #mainnav ul {
+    display: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #8c8c8c;
+    border-bottom: 1px solid #8c8c8c;
+    background: #999999;
+  }
+  /* line 628, ../scss/style-backup-v1.scss */
+  #mainnav ul li {
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    clear: none;
+  }
+  /* line 635, ../scss/style-backup-v1.scss */
+  #mainnav ul li a {
+    display: block;
+    padding: 1.4em 0;
+    border-bottom: 1px solid #8c8c8c;
+    border-right: 1px solid #8c8c8c;
+    background: #999999;
+  }
+  /* line 643, ../scss/style-backup-v1.scss */
+  #mainnav ul li a:hover {
+    background: gray;
+  }
+  /* line 649, ../scss/style-backup-v1.scss */
+  #mainnav ul li:nth-child(even) a {
+    border-right: none;
+  }
+  /* line 662, ../scss/style-backup-v1.scss */
+  #mainnav ul li.full-span {
+    width: 100%;
+  }
+  /* line 664, ../scss/style-backup-v1.scss */
+  #mainnav ul li.full-span a {
+    border: none;
+  }
+
+  /* line 673, ../scss/style-backup-v1.scss */
+  .swiper-container img.scale-with-grid {
+    width: 200%;
+    max-width: none;
+    margin: 0 -50%;
+  }
+
+  /* line 679, ../scss/style-backup-v1.scss */
+  .swiper-container img.scale-with-grid.left {
+    margin: 0 -100% 0 0;
+  }
+
+  /* line 680, ../scss/style-backup-v1.scss */
+  .swiper-container img.scale-with-grid.right {
+    margin: 0 0 0 -100%;
+  }
+
+  /* line 682, ../scss/style-backup-v1.scss */
+  .textbox {
+    font-size: .6em;
+  }
+  /* line 684, ../scss/style-backup-v1.scss */
+  .textbox h1, .textbox h2 {
+    margin-bottom: .3em;
+  }
+  /* line 685, ../scss/style-backup-v1.scss */
+  .textbox p {
+    font-size: 1.6666em;
+    margin-bottom: .25em;
+    width: 80%;
+    max-width: none;
+  }
+  /* line 686, ../scss/style-backup-v1.scss */
+  .textbox .button {
+    font-size: 1.25em;
+  }
+
+  /* line 689, ../scss/style-backup-v1.scss */
+  .textbox.topped {
+    padding-bottom: 5%;
+  }
+}

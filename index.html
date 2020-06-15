@@ -1,0 +1,692 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Site Title</title>
+    
+<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit." /> 
+<meta name="keywords" content="Lorem, ipsum, dolor, sit, amet" />
+
+<!-- HTML5 -->
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    
+<!-- VIEWPORT FOR MOBILE -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- FAVICON -->
+<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+<!-- SWIPER -->
+<link rel="stylesheet" href="swiper/idangerous.swiper.css">
+
+<!-- SWIPEBOX -->
+<link rel="stylesheet" href="swipebox/css/swipebox.css">
+    
+<!-- MAIN CSS FILE -->    
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+
+    
+</head>
+
+<body>
+    
+<header class="site-header nobar">
+    <div class="container group">
+        <div class="logo">
+            <h1><a href="index.html">S<span class="nomobile">ite </span><span class="accent">F<span class="nomobile">ramework</span></span></a></h1>
+            <p>Tagline Goes Here</p>
+        </div>
+        <form role="search" method="get" class="search-form" action="#">
+            <label>
+                <span class="screen-reader-text">Search for:</span>
+                <input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />
+            </label>
+            <input type="submit" class="search-submit" value="Search" />
+        </form>
+		<nav id="mainnav">
+   			<div id="menu" class="border-menu"><span>Menu</span></div>
+			<ul class="nav group">
+				<li class="notablet"><a href="index.html">Home</a></li>
+                <li><a href="page.html">Page</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="#">Dolor</a></li>
+                <li class="full-span"><a href="#">Consect<span class="notablet">etur</span></a></li>
+			</ul>
+		</nav>
+    </div>
+</header>
+    
+<!--
+<div class="hero vertbox bgswap">
+        <img src="images/placeholder-1500x1125-4x3a.gif" alt="placeholder image" />
+        <div class="textbox dark">
+            <h1 class="alt"><a href="#" target="_blank"><span class="nomobile">Lorem</span> Ispum</a></h1>
+    </div>
+        </div>
+</div>
+-->
+
+
+<div class="hero">
+    <div class="swiper-container">
+        <a class="swiper arrow-left nomobile" href="#"></a> 
+        <a class="swiper arrow-right nomobile" href="#"></a>
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide"> 
+                
+                <div class="vertbox bgswap">
+                    <img src="images/placeholder-1500x1125-4x3a.gif" alt="placeholder image" />
+                    <div class="textbox dark">
+                        <h1 class="alt"><a href="http://nma-match.com" target="_blank"><span class="nomobile">Hero</span> Lorem Ispum</a></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar ligula eu ligula tristique sed commodo velit ultricies.</p>
+                        <a href="#" target="_blank" class="button reverse">Consectetur</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="swiper-slide"> 
+                
+                <div class="vertbox bgswap">
+                    <img src="images/placeholder-1500x1125-4x3b.gif" alt="placeholder image" />
+                    <div class="textbox dark">
+                        <h1><a href="http://nma-match.com" target="_blank"><span class="nomobile">Hero</span> Lorem Ispum</a></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar ligula eu ligula tristique sed commodo velit ultricies.</p>
+                        <a href="#" target="_blank" class="button reverse">Consectetur</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="pagination"></div>
+    
+</div>
+
+<!--
+<div class="hero vertbox">
+        <div class="image-wrapper bgswap">
+            <div class="cover">
+                <img src="images/placeholder-1500x1125-4x3a.gif" alt="placeholder image" />
+            </div>
+        </div>
+        <div class="textbox dark">
+            <h1><a href="http://nma-match.com" target="_blank"><span class="nomobile">Hero</span> Lorem Ispum</a></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar ligula eu ligula tristique sed commodo velit ultricies.</p>
+            <a href="#" target="_blank" class="button reverse">Consectetur</a>
+    </div>
+        </div>
+</div>
+-->
+
+<!--
+<div class="hero vertbox bgswap">
+        <img src="images/placeholder-1500x1125-4x3a.gif" alt="placeholder image" />
+        <div class="textbox dark">
+            <h1><a href="http://nma-match.com" target="_blank"><span class="nomobile">Hero</span> Lorem Ispum</a></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar ligula eu ligula tristique sed commodo velit ultricies.</p>
+            <a href="#" target="_blank" class="button reverse">Consectetur</a>
+    </div>
+        </div>
+</div>-->
+
+<!--
+<div class="hero vertbox bgswap">
+        <img src="images/placeholder-1500x1125-4x3a.gif" alt="placeholder image" />
+        <div class="textbox dark">
+            <h1 class="alt"><a href="http://nma-match.com" target="_blank"><span class="nomobile">Hero</span> Lorem Ispum</a></h1>
+    </div>
+        </div>
+</div>
+-->
+
+
+<!--
+<div class="hero fpage">
+    <div class="fcontainer">
+        <div class="image-wrapper bgswap">
+            <div class="cover">
+                <img src="images/placeholder-1500x1125-4x3a.gif" alt="placeholder image" />
+            </div>
+        </div>
+        <div class="content dark">
+            <div class="textbox">
+                <h1><a href="http://nma-match.com" target="_blank"><span class="nomobile">Hero</span> Lorem Ispum</a></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar ligula eu ligula tristique sed commodo velit ultricies.</p>
+                <a href="#" target="_blank" class="button reverse">Consectetur</a>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+<!--
+<div class="hero regular">
+    <img src="images/placeholder-1500x1125-4x3a.gif" alt="placeholder image" />
+    <div class="vertbox">
+        <div class="textbox dark">
+            <h1><a href="http://nma-match.com" target="_blank"><span class="nomobile">Hero</span> Lorem Ispum</a></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar ligula eu ligula tristique sed commodo velit ultricies.</p>
+            <a href="#" target="_blank" class="button reverse">Consectetur</a>
+        </div>
+    </div>
+</div>
+-->
+
+
+
+
+<section class="colored">
+    <div class="container">
+    
+        <h1 class="sectionhead">Section Head</h1>
+        
+        <h3 class="textcentered">Base Typography</h3>
+        <p class="textcentered">A 16px body size with headings based on a traditional typographic scale.</p>
+        
+        
+        <div class="row">
+        	<div class="two-thirds column centered">
+        
+                <h1>This is a Heading 1</h1>
+                <h2>This is a Heading 2</h2>
+                <h3>This is a Heading 3</h3>
+                <h4>This is a Heading 4</h4>
+                <h5>This is a Heading 5</h5>
+                <h6>This is a Heading 6</h6>
+                
+                <p>This is standard body text. Donec pulvinar ligula eu ligula tristique sed commodo velit ultricies. Fusce dui velit, <strong>something strong</strong> tempus eu rhoncus ac, sodales ac leo. Donec vitae nisl magna. Class aptent taciti sociosqu ad litora torquent per <em>something with emphasis</em> conubia nostra, per inceptos himenaeos.</p>
+                <p>This is a consecutive paragraph. Morbi faucibus felis vel sem ultrices quis condimentum odio tincidunt. This is an <a href="#">inline link</a>. In id quam id nisi semper laoreet. Nam vehicula, mauris eget sodales accumsan, sapien odio sodales risus, pretium commodo ligula purus in felis. Pellentesque arcu elit</p>
+                
+                <h1>H1. This is a Heading 1 that is followed by a byline</h1>
+                <p class="byline">This is a Paragraph with a class="byline"</p>
+                <p>Donec pulvinar ligula eu ligula tristique sed commodo velit ultricies. Fusce dui velit, tempus eu rhoncus ac, sodales ac leo. Donec vitae nisl magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+				<p>Morbi faucibus felis vel sem ultrices quis condimentum odio tincidunt. In id quam id nisi semper laoreet. Nam vehicula, mauris eget sodales accumsan, sapien odio sodales risus, pretium commodo ligula purus in felis. Pellentesque arcu elit</p> 
+                <img src="http://placehold.it/100x100" alt="Placeholder Image" />
+                
+                
+                <h2>H2. This is a Heading 2 that is followed by a byline</h2>
+                <p class="byline">This is a Paragraph with a class="byline"</p>
+                <p>Donec pulvinar ligula eu ligula tristique sed commodo velit ultricies. Fusce dui velit, tempus eu rhoncus ac, sodales ac leo. Donec vitae nisl magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+				<p>Morbi faucibus felis vel sem ultrices quis condimentum odio tincidunt. In id quam id nisi semper laoreet. Nam vehicula, mauris eget sodales accumsan, sapien odio sodales risus, pretium commodo ligula purus in felis. Pellentesque arcu elit</p> 
+                
+                
+                
+                <h3>H3. This is a Heading 1 that is followed by a byline</h3>
+                <p class="byline">This is a Paragraph with a class="byline"</p>
+                <p>Donec pulvinar ligula eu ligula tristique sed commodo velit ultricies. Fusce dui velit, tempus eu rhoncus ac, sodales ac leo. Donec vitae nisl magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+				<p>Morbi faucibus felis vel sem ultrices quis condimentum odio tincidunt. In id quam id nisi semper laoreet. Nam vehicula, mauris eget sodales accumsan, sapien odio sodales risus, pretium commodo ligula purus in felis. Pellentesque arcu elit</p> 
+                
+                
+                <h4>H4. This is a Heading 4 that is followed by a byline</h4>
+                <p class="byline">This is a Paragraph with a class="byline"</p>
+                <p>Donec pulvinar ligula eu ligula tristique sed commodo velit ultricies. Fusce dui velit, tempus eu rhoncus ac, sodales ac leo. Donec vitae nisl magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+				<p>Morbi faucibus felis vel sem ultrices quis condimentum odio tincidunt. In id quam id nisi semper laoreet. Nam vehicula, mauris eget sodales accumsan, sapien odio sodales risus, pretium commodo ligula purus in felis. Pellentesque arcu elit</p> 
+                
+                
+                <h5>H5. This is a Heading 5 that is followed by no byline</h5>
+                <p>Donec pulvinar ligula eu ligula tristique sed commodo velit ultricies. Fusce dui velit, tempus eu rhoncus ac, sodales ac leo. Donec vitae nisl magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+				<p>Morbi faucibus felis vel sem ultrices quis condimentum odio tincidunt. In id quam id nisi semper laoreet. Nam vehicula, mauris eget sodales accumsan, sapien odio sodales risus, pretium commodo ligula purus in felis. Pellentesque arcu elit</p> 
+                
+                
+                <h6>H6. This is a Heading 6 that is followed by no byline</h6>
+                <p>Donec pulvinar ligula eu ligula tristique sed commodo velit ultricies. Fusce dui velit, tempus eu rhoncus ac, sodales ac leo. Donec vitae nisl magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+				<p>Morbi faucibus felis vel sem ultrices quis condimentum odio tincidunt. In id quam id nisi semper laoreet. Nam vehicula, mauris eget sodales accumsan, sapien odio sodales risus, pretium commodo ligula purus in felis. Pellentesque arcu elit</p> 
+                
+            </div>
+        </div>
+    
+    </div>
+</section>
+
+<section class="colored textcentered demo">
+    <div class="container">
+    
+        <h3>Base Grid</h3>
+        <p>A basic grid for layout of content.</p>
+        
+		<div class="row group">
+			<div class="one-whole column">
+                <p>One Whole Column</p>
+			</div>
+		</div>
+        
+		<div class="row group">
+			<div class="one-half column">
+                <p>One-half Column</p>
+			</div>
+			<div class="one-half column">
+                <p>One-half Column</p>
+			</div>
+		</div>
+        
+		<div class="row group">
+			<div class="one-third column">
+                <p>One-third Column</p>
+			</div>
+			<div class="one-third column">
+                <p>One-third Column</p>
+			</div>
+			<div class="one-third column">
+                <p>One-third Column</p>
+			</div>
+		</div>
+        
+		<div class="row group">
+			<div class="one-third column">
+                <p>One-third Column</p>
+			</div>
+			<div class="two-thirds column">
+                <p>Two-thirds Column</p>
+			</div>
+		</div>
+        
+		<div class="row group">
+			<div class="one-fourth column">
+                <p>One-fourth Column</p>
+			</div>
+			<div class="one-fourth column">
+                <p>One-fourth Column</p>
+			</div>
+			<div class="one-fourth column">
+                <p>One-fourth Column</p>
+			</div>
+			<div class="one-fourth column">
+                <p>One-fourth Column</p>
+			</div>
+		</div>
+    
+    </div>
+</section>
+
+<section class="colored">
+    <div class="container">
+        
+        <h3 class="textcentered">Default Image Grid</h3>
+        <p class="textcentered">Grid layout option to present a set of images with a modal.</p>
+        
+        <ul class="grid greyccc"> 
+            <li class="w12 h6"><a href="images/placeholder-1500x750-2x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x750-2x1.gif" alt="" /></a></li>
+            <li class="w6 h6"><a href="images/placeholder-1500x1500-1x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x1500-1x1.gif" alt="" /></a></li>
+            <li class="w6 h6"><a href="images/placeholder-1500x1500-1x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x1500-1x1.gif" alt="" /></a></li>
+            <li class="w8 h6"><a href="images/placeholder-1500x1125-4x3.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x1125-4x3.gif" alt="" /></a></li>
+            <li class="w4 h3"><a href="images/placeholder-1500x1125-4x3.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x1125-4x3.gif" alt="" /></a></li>
+            <li class="w4 h3"><a href="images/placeholder-1500x1125-4x3.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x1125-4x3.gif" alt="" /></a></li>
+            <li class="w6 h9"><a href="images/placeholder-1000x1500-2x3.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1000x1500-2x3.gif" alt="" /></a></li>
+            <li class="w6 h9"><a href="images/placeholder-1000x1500-2x3.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1000x1500-2x3.gif" alt="" /></a></li>
+        </ul> 
+        
+        <h3 class="textcentered">Thin Image Grid</h3>
+        <p class="textcentered">Thinner, percentage-based option.</p>
+        
+        <ul class="grid grid-thin greyccc"> 
+            <li class="w1 h1"><a href="images/placeholder-1500x1500-1x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x1500-1x1.gif" alt="" /></a></li>
+            <li class="w1 h1"><a href="images/placeholder-750x1500-1x2.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-750x1500-1x2.gif" alt="" /></a></li>
+            <li class="w1 h1"><a href="images/placeholder-500x1500-1x3.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-500x1500-1x3.gif" alt="" /></a></li>
+            <li class="w1 h1"><a href="images/placeholder-375x1500-1x4.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-375x1500-1x4.gif" alt="" /></a></li>
+            <li class="w1 h1"><a href="images/placeholder-1500x750-2x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x750-2x1.gif" alt="" /></a></li>
+            <li class="w1 h1"><a href="images/placeholder-1000x1500-2x3.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1000x1500-2x3.gif" alt="" /></a></li>
+            <li class="w1 h1"><a href="images/placeholder-1500x500-3x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x500-3x1.gif" alt="" /></a></li>
+            <li class="w1 h1"><a href="images/placeholder-1500x1000-3x2.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x1000-3x2.gif" alt="" /></a></li>
+            <li class="w1 h1"><a href="images/placeholder-1125x1500-3x4.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1125x1500-3x4.gif" alt="" /></a></li>
+            <li class="w1 h1"><a href="images/placeholder-1500x375-4x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x375-4x1.gif" alt="" /></a></li>
+            <li class="w1 h1"><a href="images/placeholder-1500x1125-4x3.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x1125-4x3.gif" alt="" /></a></li>
+            <li class="w1 h1"><a href="images/placeholder-1500x1500-1x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x1500-1x1.gif" alt="" /></a></li>
+            
+            
+            <li class="w2 h2"><a href="images/placeholder-1500x1500-1x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x1500-1x1.gif" alt="" /></a></li>
+            <li class="w2 h2"><a href="images/placeholder-750x1500-1x2.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-750x1500-1x2.gif" alt="" /></a></li>
+            <li class="w2 h2"><a href="images/placeholder-500x1500-1x3.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-500x1500-1x3.gif" alt="" /></a></li>
+            <li class="w2 h2"><a href="images/placeholder-375x1500-1x4.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-375x1500-1x4.gif" alt="" /></a></li>
+            <li class="w2 h2"><a href="images/placeholder-1500x750-2x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x750-2x1.gif" alt="" /></a></li>
+            <li class="w2 h2"><a href="images/placeholder-1000x1500-2x3.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1000x1500-2x3.gif" alt="" /></a></li>
+            
+            <li class="w3 h3"><a href="images/placeholder-1500x500-3x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x500-3x1.gif" alt="" /></a></li>
+            <li class="w3 h3"><a href="images/placeholder-1500x1000-3x2.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x1000-3x2.gif" alt="" /></a></li>
+            <li class="w3 h3"><a href="images/placeholder-1125x1500-3x4.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1125x1500-3x4.gif" alt="" /></a></li>
+            <li class="w3 h3"><a href="images/placeholder-1500x375-4x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x375-4x1.gif" alt="" /></a></li>
+            
+            <li class="w4 h4"><a href="images/placeholder-1500x1125-4x3.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x1125-4x3.gif" alt="" /></a></li>
+            <li class="w4 h4"><a href="images/placeholder-1500x1500-1x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x1500-1x1.gif" alt="" /></a></li>
+            <li class="w4 h4"><a href="images/placeholder-750x1500-1x2.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-750x1500-1x2.gif" alt="" /></a></li>
+            
+            <li class="w5 h5"><a href="images/placeholder-500x1500-1x3.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-500x1500-1x3.gif" alt="" /></a></li>
+            <li class="w7 h5"><a href="images/placeholder-375x1500-1x4.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-375x1500-1x4.gif" alt="" /></a></li>
+            
+            <li class="w6 h6"><a href="images/placeholder-1500x750-2x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x750-2x1.gif" alt="" /></a></li>
+            <li class="w6 h6"><a href="images/placeholder-1000x1500-2x3.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1000x1500-2x3.gif" alt="" /></a></li>
+            
+            <li class="w7 h7"><a href="images/placeholder-1500x500-3x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x500-3x1.gif" alt="" /></a></li>
+            <li class="w5 h7"><a href="images/placeholder-1500x1000-3x2.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x1000-3x2.gif" alt="" /></a></li>
+            
+            <li class="w8 h8"><a href="images/placeholder-1125x1500-3x4.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1125x1500-3x4.gif" alt="" /></a></li>
+            <li class="w4 h8"><a href="images/placeholder-1500x375-4x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x375-4x1.gif" alt="" /></a></li>
+            
+            <li class="w9 h9"><a href="images/placeholder-1500x1125-4x3.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x1125-4x3.gif" alt="" /></a></li>
+            <li class="w3 h9"><a href="images/placeholder-1500x1500-1x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x1500-1x1.gif" alt="" /></a></li>
+            
+            <li class="w10 h10"><a href="images/placeholder-750x1500-1x2.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-750x1500-1x2.gif" alt="" /></a></li>
+            <li class="w2 h10"><a href="images/placeholder-500x1500-1x3.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-500x1500-1x3.gif" alt="" /></a></li>
+            
+            <li class="w11 h11"><a href="images/placeholder-375x1500-1x4.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-375x1500-1x4.gif" alt="" /></a></li>
+            <li class="w1 h11"><a href="images/placeholder-1500x750-2x1.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1500x750-2x1.gif" alt="" /></a></li>
+            
+            <li class="w12 h12"><a href="images/placeholder-1000x1500-2x3.gif" class="swipebox" rel="group1" title="Placeholder Title"><img src="images/placeholder-1000x1500-2x3.gif" alt="" /></a></li>
+            
+            
+        </ul> 
+    
+    </div>
+</section>
+
+<section class="colored">
+    <div class="container">
+        
+        <article>
+
+            <h1>This is a heading 1 Lorem ipsum et dolorem</h1>
+            <h2>This is a heading 2 Lorem ipsum et dolorem</h2>
+            <h3>This is a heading 3 Lorem ipsum et dolorem</h3>
+            <h4>This is a heading 4 Lorem ipsum et dolorem</h4>
+            <h5>This is a heading 5 Lorem ipsum et dolorem</h5>
+            <h6>This is a heading 6 Lorem ipsum et dolorem</h6>
+
+            <p>Lorem ipsum dolor sit amet, <strong>strong</strong> consectetur adipiscing elit. Sed volutpat, lectus eu semper facilisis, purus augue egestas nisl, sit amet eleifend quam mi in augue. Curabitur tellus lorem, vulputate vitae sollicitudin vel, <em>emphasis</em> efficitur vel diam. Nullam pulvinar nulla sed dictum dignissim. In ornare posuere nulla, nec varius justo volutpat vitae. Nam <a href="#">inline link</a> vehicula erat vitae turpis malesuada, a fringilla neque accumsan. Vestibulum at mi felis. Nullam tristique, libero vel interdum ultrices, mauris turpis cursus nisi, ac posuere tellus orci in nisl. Duis mauris enim, consequat sit amet libero sit amet, euismod cursus neque. Integer dolor felis, commodo varius quam id, molestie lobortis tortor. Sed cursus felis ac viverra hendrerit. Praesent sodales est non lectus posuere egestas. Quisque consectetur dui a orci lacinia pretium. Donec fermentum, massa nec mollis hendrerit, lorem mi sagittis quam, a vestibulum quam arcu vitae augue.</p>
+
+            <p>Nulla scelerisque odio eu nulla volutpat, in aliquet sem fringilla. Integer tortor arcu, ornare vitae justo ut, volutpat malesuada sapien. Nam dictum ac augue eget molestie. Aenean a pretium ex, ac cursus sapien. Cras commodo est nec tempus fermentum. Vestibulum tempus lacus sit amet massa semper, quis dapibus lorem scelerisque. Pellentesque facilisis dignissim arcu at ullamcorper. Vivamus sed pretium nisl. In sagittis orci justo, eget viverra felis lobortis vel. Quisque finibus eu metus in congue. Proin vulputate dictum elementum. Ut euismod pharetra enim, malesuada sodales ligula sollicitudin non. Cras tincidunt sit amet nibh id rutrum. Phasellus maximus commodo nulla sed viverra. Quisque non est ex.</p>
+
+            <div class="row">
+                <div class="one-half column">
+                    <h4>This is an unordered list:</h4>
+
+                    <ul>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <li>List Item
+                            <ul>
+                                <li>List Item</li>
+                                <li>List Item</li>
+                                <li>List Item</li>
+                            </ul>
+                        </li>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <li>List Item
+                            <ol>
+                                <li>List Item</li>
+                                <li>List Item</li>
+                                <li>List Item</li>
+                            </ol>
+                        </li>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                    </ul> 
+                </div>
+                <div class="one-half column"> 
+                    <h4>This is an ordered list:</h4>
+
+                    <ol>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <li>List Item
+                            <ul>
+                                <li>List Item</li>
+                                <li>List Item</li>
+                                <li>List Item</li>
+                            </ul>
+                        </li>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <li>List Item
+                            <ol>
+                                <li>List Item</li>
+                                <li>List Item</li>
+                                <li>List Item</li>
+                            </ol>
+                        </li>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                    </ol>  
+                </div>
+            </div>
+ 
+
+            <p>This is a link to <a href="http://www.google.com">Google.com</a></p>
+        </article>
+    </div>
+</section>
+    
+<section class="colored">
+    <div class="container">
+        
+        <h3 class="textcentered">Hero Sections</h3>
+        <p class="textcentered">Full-screen and full-image hero sections with text boxes.</p>
+    
+    </div>
+</section>
+    
+<div class="hero vertbox bgswap">
+        <img src="images/placeholder-1500x1125-4x3a.gif" alt="placeholder image" />
+        <div class="textbox dark">
+            <h1><span class="nomobile">Full-screen</span> Hero Title</h1>
+            <p>Default Hero: centered. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" target="_blank" class="button reverse">Consectetur</a>
+        </div>
+</div>
+    
+<div class="hero vertbox bgswap">
+        <img src="images/placeholder-1500x1125-4x3b.gif" alt="placeholder image" />
+        <div class="textbox dark topped">
+            <h1><span class="nomobile">Aligned</span> Top Hero</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" target="_blank" class="button reverse">Consectetur</a>
+        </div>
+</div>
+    
+<div class="hero vertbox bgswap">
+        <img src="images/placeholder-1500x1125-4x3a.gif" alt="placeholder image" />
+        <div class="textbox dark lefted">
+            <h1><span class="nomobile">Aligned</span> Left Hero</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" target="_blank" class="button reverse">Consectetur</a>
+        </div>
+</div>
+    
+<div class="hero vertbox bgswap">
+        <img src="images/placeholder-1500x1125-4x3b.gif" alt="placeholder image" />
+        <div class="textbox dark righted">
+            <h1><span class="nomobile">Aligned</span> Right Hero</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" target="_blank" class="button reverse">Consectetur</a>
+        </div>
+</div>
+    
+<div class="hero vertbox bgswap">
+        <img src="images/placeholder-1500x1125-4x3a.gif" alt="placeholder image" />
+        <div class="textbox dark bottomed">
+            <h1><span class="nomobile">Aligned</span> Bottom Hero</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" target="_blank" class="button reverse">Consectetur</a>
+        </div>
+</div>
+    
+<footer class="site-footer nobar">
+    <div class="container group">
+        
+    	<nav id="footernav">
+			<ul class="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="page.html">Page</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="#">Degree<span class="nomobile"> Info</span></a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+        
+        <ul id="socialmedia">
+        	<li id="foot_facebook"><a href="https://www.facebook.com/pages/NewMediaArtsKCC/189821694828?ref=ts" onclick="window.open(this.href,'_blank');return false;">Facebook</a></li>
+            <li id="foot_twitter"><a href="http://twitter.com/NewMediaArtsKCC" onclick="window.open(this.href,'_blank');return false;">Twitter</a></li>
+        </ul>
+        
+        <p id="copyright">© Copyright Site Name</p>
+        
+    
+    </div>
+    
+</footer>
+
+<!-- JS -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+<!-- SWIPER -->
+<script defer src="swiper/idangerous.swiper.min.js"></script>
+  
+<!-- SWIPEBOX -->
+<script src="swipebox/js/jquery.swipebox.js"></script>
+    
+<script type="text/javascript">
+
+	$(document).ready(function() {
+			
+		// JQUERY ANIMATE TO ANCHOR WITH EASING
+		$('.logo a, a.anchor, #footernav a').bind('click',function(event){
+			var $anchor = $(this);
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 1500,'easeInOutExpo'); 
+			event.preventDefault();
+		});
+		$('#mainnav a').bind('click',function(event){
+			var $anchor = $(this);
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 1500,'easeInOutExpo');
+            var w = $(window).width();  
+            if(w < 768) {  
+                $('#mainnav ul').slideToggle();
+            }  
+			event.preventDefault();
+		});
+		
+		// JQUERY MENU NAV TOGGLE
+		$('#menu').bind('click',function(event){
+            $('#mainnav ul').slideToggle();
+		});
+        
+        //REMOVE MENU HOVER ON MOBILE TOUCH
+        $('#menu').bind('touchstart touchend', function(event) {
+            $("#menu").css("background","none");
+            
+        });
+        
+        // SWIPER
+        $(function(){
+            var mySwiper = $('.swiper-container').swiper({
+            //Your options here:
+            mode:'horizontal',
+            //grabCursor: true,
+            pagination: '.pagination',
+            paginationClickable: true,
+            //calculateHeight: true,
+            keyboardControl: true,
+            loop: true,
+            autoplay: 5000,
+            autoplayDisableOnInteraction: true
+            //etc..
+            });
+
+            $('.arrow-left').on('click', function(e){
+                e.preventDefault()
+                mySwiper.swipePrev()
+            })
+            $('.arrow-right').on('click', function(e){
+                e.preventDefault()
+                mySwiper.swipeNext()
+            })
+        })
+        
+        //SWAP INLINE IMAGE TO BACKGROUND CSS IMAGE
+        $(".bgswap img").hide();
+        $( ".bgswap" ).each( function(e){
+            var $source = $("img", this).attr("src");
+            $(this).css({
+                'backgroundImage': 'url(' + $source +')'
+            });
+        });
+        
+        //SWAP INLINE GRID IMAGES TO BACKGROUND CSS IMAGE
+        $(".grid-bgswap li img").hide();
+        $( ".grid-bgswap li" ).each( function(e){
+            var $source = $("img", this).attr("src");
+            $(this).css({
+                'backgroundImage': 'url(' + $source +')'
+            });
+        });
+        
+        //SWIPEBOX
+		$(".swipebox, .swipebox-video").swipebox({
+			loopAtEnd: true,
+            useSVG : false,
+            hideBarsDelay : 0
+		});
+		
+		$(window).resize(function(){  
+            var w = $(window).width();  
+            if(w > 768) {  
+                $('#mainnav ul').removeAttr('style');  
+            }  
+		});
+	  
+	});
+	
+</script>
+    
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
